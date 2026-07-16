@@ -26,10 +26,10 @@ function NavLogo({ size = 'md' }) {
       <div className="flex flex-col leading-none gap-[3px]">
         <span
           style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
-            fontWeight: 800,
-            fontSize: size === 'sm' ? '1.05rem' : '1.2rem',
-            letterSpacing: '0.22em',
+            fontFamily: "'Cinzel', Georgia, serif",
+            fontWeight: 700,
+            fontSize: size === 'sm' ? '1.05rem' : '1.25rem',
+            letterSpacing: '0.18em',
             color: '#ffffff',
             lineHeight: 1,
           }}
@@ -38,13 +38,14 @@ function NavLogo({ size = 'md' }) {
         </span>
         <span
           style={{
-            fontFamily: "'Raleway', sans-serif",
-            fontWeight: 500,
-            fontSize: size === 'sm' ? '0.48rem' : '0.52rem',
-            letterSpacing: '0.45em',
+            fontFamily: "'Inter', sans-serif",
+            fontWeight: 600,
+            fontSize: size === 'sm' ? '0.45rem' : '0.5rem',
+            letterSpacing: '0.52em',
             color: '#d4a853',
             lineHeight: 1,
             textTransform: 'uppercase',
+            marginTop: '2px',
           }}
         >
           ENTERPRISES

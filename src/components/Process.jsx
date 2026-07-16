@@ -86,15 +86,20 @@ export default function Process() {
                   <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-2xl bg-gradient-to-br from-[#d4a853] to-[#A77428] flex items-center justify-center shadow-lg shadow-[#A77428]/30 group-hover:scale-110 transition-transform duration-300 relative z-10">
                     <Icon className="w-7 h-7 text-white" strokeWidth={1.6} />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#0C1C2E] border-2 border-[#A77428] flex items-center justify-center z-20">
-                    <span className="text-[#d4a853] text-[9px] font-black">{i + 1}</span>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#0C1C2E] border border-[#A77428]/65 flex items-center justify-center z-20">
+                    <span className="text-[#d4a853] text-xs font-bold" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>{i + 1}</span>
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="lg:px-2">
-                  <span className="text-[#A77428]/50 text-xs font-bold tracking-widest uppercase">{number}</span>
-                  <h3 className="text-[#0C1C2E] font-bold text-base mt-1 mb-2">{title}</h3>
+                  <span
+                    className="text-[#A77428] text-sm font-bold tracking-wider italic block"
+                    style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+                  >
+                    Step {number}
+                  </span>
+                  <h3 className="text-[#0C1C2E] font-bold text-base mt-1.5 mb-2">{title}</h3>
                   <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
                 </div>
               </motion.div>

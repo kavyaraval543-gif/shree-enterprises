@@ -72,8 +72,13 @@ export default function WhyChooseUs() {
                   custom={i}
                   className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-colors duration-300"
                 >
-                  <p className="text-3xl font-black text-[#d4a853] mb-1">{value}</p>
-                  <p className="text-white/60 text-sm font-medium">{label}</p>
+                  <p
+                    className="text-4xl font-bold text-[#d4a853] mb-1.5 leading-none"
+                    style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", letterSpacing: '0.02em' }}
+                  >
+                    {value}
+                  </p>
+                  <p className="text-white/60 text-xs font-semibold uppercase tracking-wider">{label}</p>
                 </motion.div>
               ))}
             </div>

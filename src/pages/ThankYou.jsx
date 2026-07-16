@@ -62,7 +62,7 @@ export default function ThankYou() {
               ].map((step, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div className="shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#d4a853] to-[#A77428] flex items-center justify-center">
-                    <span className="text-white text-xs font-black">{i + 1}</span>
+                    <span className="text-white text-xs font-bold" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>{i + 1}</span>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">{step}</p>
                 </div>
