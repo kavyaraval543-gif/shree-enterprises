@@ -62,7 +62,7 @@ export default function ThankYou() {
               ].map((step, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div className="shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#d4a853] to-[#A77428] flex items-center justify-center">
-                    <span className="text-white text-xs font-bold" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>{i + 1}</span>
+                    <span className="text-white text-xs font-bold" style={{ fontFamily: "'Times New Roman', Times, serif" }}>{i + 1}</span>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">{step}</p>
                 </div>
@@ -89,9 +89,10 @@ export default function ThankYou() {
               href="tel:9322652532"
               id="thankyou-call-btn"
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#d4a853] to-[#A77428] text-white font-semibold px-8 py-3.5 rounded-2xl shadow-lg shadow-[#A77428]/30 hover:scale-105 transition-all duration-300"
+              style={{ fontFamily: "'Raleway', sans-serif" }}
             >
               <Phone className="w-4 h-4" />
-              Call Now — 93226 52532
+              Call Now — <span className="text-base font-bold" style={{ fontFamily: "'Times New Roman', Times, serif" }}>93226 52532</span>
             </a>
           </motion.div>
 

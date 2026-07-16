@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
                 >
                   <p
                     className="text-4xl font-bold text-[#d4a853] mb-1.5 leading-none"
-                    style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", letterSpacing: '0.02em' }}
+                    style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     {value}
                   </p>

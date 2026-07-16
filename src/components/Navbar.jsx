@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronRight } from 'lucide-react'
+import { Menu, X, ChevronRight, Phone } from 'lucide-react'
 import shipIcon from '../assets/ship_icon_transparent.png'
 
 const navLinks = [
@@ -123,7 +123,16 @@ export default function Navbar() {
             </nav>
 
             {/* CTA + Mobile toggle */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
+              <a
+                href="tel:9322652532"
+                className="hidden sm:inline-flex items-center gap-2 text-[0.9rem] font-bold tracking-[0.05em] text-[#d4a853] hover:text-white transition-colors duration-250"
+                style={{ fontFamily: "'Times New Roman', Times, serif" }}
+              >
+                <Phone className="w-3.5 h-3.5 text-[#d4a853] animate-pulse shrink-0" />
+                93226 52532
+              </a>
+
               <Link
                 to="/request-quote"
                 id="navbar-request-quote-btn"

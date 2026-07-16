@@ -87,15 +87,15 @@ export default function Process() {
                     <Icon className="w-7 h-7 text-white" strokeWidth={1.6} />
                   </div>
                   <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#0C1C2E] border border-[#A77428]/65 flex items-center justify-center z-20">
-                    <span className="text-[#d4a853] text-xs font-bold" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>{i + 1}</span>
+                    <span className="text-[#d4a853] text-[11px] font-bold" style={{ fontFamily: "'Times New Roman', Times, serif" }}>{i + 1}</span>
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="lg:px-2">
                   <span
-                    className="text-[#A77428] text-sm font-bold tracking-wider italic block"
-                    style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+                    className="text-[#A77428] text-[11px] font-bold tracking-widest block uppercase"
+                    style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     Step {number}
                   </span>

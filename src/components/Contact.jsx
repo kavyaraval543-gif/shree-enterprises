@@ -7,26 +7,47 @@ const contactDetails = [
   {
     icon: MapPin,
     title: 'Office Address',
-    lines: [
-      "'A' Wing, Office No 102,",
-      'Sumit Samarth Arcade, Aarey Road,',
-      'Goregaon (West), Mumbai – 400104',
-    ],
     color: 'from-blue-500 to-blue-700',
+    content: (
+      <p className="text-slate-500 text-sm leading-relaxed" style={{ fontFamily: "'Raleway', sans-serif" }}>
+        'A' Wing, Office No 102,<br />
+        Sumit Samarth Arcade, Aarey Road,<br />
+        Goregaon (West), Mumbai – 400104
+      </p>
+    )
   },
   {
     icon: Phone,
     title: 'Phone Numbers',
-    lines: ['022 6828 7055', '022 4973 8272', 'Darshan Raval: 93226 52532'],
     color: 'from-[#A77428] to-[#d4a853]',
-    href: 'tel:9322652532',
+    content: (
+      <div className="flex flex-col gap-1.5" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+        <a href="tel:02268287055" className="block text-slate-600 text-[0.95rem] hover:text-[#A77428] transition-colors font-medium">
+          022 6828 7055 <span className="text-[10px] text-slate-400 font-normal block sm:inline sm:ml-1" style={{ fontFamily: "'Raleway', sans-serif" }}>(Office Line 1)</span>
+        </a>
+        <a href="tel:02249738272" className="block text-slate-600 text-[0.95rem] hover:text-[#A77428] transition-colors font-medium">
+          022 4973 8272 <span className="text-[10px] text-slate-400 font-normal block sm:inline sm:ml-1" style={{ fontFamily: "'Raleway', sans-serif" }}>(Office Line 2)</span>
+        </a>
+        <a href="tel:9322652532" className="block text-slate-600 text-[0.95rem] hover:text-[#A77428] transition-colors font-medium">
+          93226 52532 <span className="text-[10px] text-slate-400 font-normal block sm:inline sm:ml-1" style={{ fontFamily: "'Raleway', sans-serif" }}>(Darshan Raval)</span>
+        </a>
+      </div>
+    )
   },
   {
     icon: Mail,
     title: 'Email Addresses',
-    lines: ['shree@shree-enterprise.net.in', 'shreeenterprises2244@gmail.com'],
     color: 'from-emerald-500 to-emerald-700',
-    href: 'mailto:shree@shree-enterprise.net.in',
+    content: (
+      <div className="flex flex-col gap-1.5" style={{ fontFamily: "'Raleway', sans-serif" }}>
+        <a href="mailto:shree@shree-enterprise.net.in" className="block text-slate-600 text-sm hover:text-[#A77428] transition-colors font-medium break-all">
+          shree@shree-enterprise.net.in
+        </a>
+        <a href="mailto:shreeenterprises2244@gmail.com" className="block text-slate-600 text-sm hover:text-[#A77428] transition-colors font-medium break-all">
+          shreeenterprises2244@gmail.com
+        </a>
+      </div>
+    )
   },
 ]
 
@@ -72,7 +93,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-5 gap-10 items-start">
           {/* Left: Contact cards */}
           <div className="lg:col-span-2 flex flex-col gap-5">
-            {contactDetails.map(({ icon: Icon, title, lines, color, href }, i) => (
+            {contactDetails.map(({ icon: Icon, title, color, content }, i) => (
               <motion.div
                 key={title}
                 variants={fadeUp}
@@ -85,16 +106,8 @@ export default function Contact() {
                   <Icon className="w-6 h-6 text-white" strokeWidth={1.7} />
                 </div>
                 <div>
-                  <p className="text-[#0C1C2E] font-bold text-sm mb-1">{title}</p>
-                  {lines.map((line, li) => (
-                    href && li === 0 ? (
-                      <a key={li} href={href} className="block text-slate-600 text-sm hover:text-[#A77428] transition-colors duration-200">
-                        {line}
-                      </a>
-                    ) : (
-                      <p key={li} className="text-slate-500 text-sm">{line}</p>
-                    )
-                  ))}
+                  <p className="text-[#0C1C2E] font-bold text-sm mb-2">{title}</p>
+                  {content}
                 </div>
               </motion.div>
             ))}
@@ -111,8 +124,8 @@ export default function Contact() {
                 <span className="text-[#d4a853] font-black text-xs">CHA</span>
               </div>
               <div>
-                <p className="text-white font-semibold text-sm">Customs Broker No.</p>
-                <p className="text-[#d4a853] font-bold text-lg tracking-wider">11/2244</p>
+                <p className="text-white/60 text-xs font-bold uppercase tracking-wider">Customs Broker No.</p>
+                <p className="text-[#d4a853] font-extrabold text-lg tracking-widest mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>11/2244</p>
               </div>
             </motion.div>
           </div>

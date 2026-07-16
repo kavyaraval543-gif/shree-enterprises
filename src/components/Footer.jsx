@@ -128,10 +128,10 @@ export default function Footer() {
               </div>
               <div className="flex gap-3">
                 <Phone className="w-4 h-4 text-[#d4a853] shrink-0 mt-0.5" />
-                <div>
-                  <a href="tel:0226828055" className="block text-white/55 hover:text-[#d4a853] text-sm transition-colors duration-200">022 6828 7055</a>
-                  <a href="tel:0224973272" className="block text-white/55 hover:text-[#d4a853] text-sm transition-colors duration-200">022 4973 8272</a>
-                  <a href="tel:9322652532" className="block text-white/55 hover:text-[#d4a853] text-sm transition-colors duration-200">93226 52532 (Darshan)</a>
+                <div style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <a href="tel:02268287055" className="block text-white/60 hover:text-[#d4a853] text-[0.95rem] tracking-wide transition-colors duration-200">022 6828 7055</a>
+                  <a href="tel:02249738272" className="block text-white/60 hover:text-[#d4a853] text-[0.95rem] tracking-wide transition-colors duration-200">022 4973 8272</a>
+                  <a href="tel:9322652532" className="block text-white/60 hover:text-[#d4a853] text-[0.95rem] tracking-wide transition-colors duration-200">93226 52532 <span className="text-xs text-white/40 font-medium" style={{ fontFamily: "'Raleway', sans-serif" }}>(Darshan)</span></a>
                 </div>
               </div>
               <div className="flex gap-3">
